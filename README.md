@@ -17,8 +17,6 @@
 |lista zalet|div.review-feature__title--positives ~ div.review-feature__item <br>div.review-feature__col:has( > div.review-feature__title--positives) > div.review-feature__item<br>div.review-feature__item:has( ~ div.review-feature__title--positives)|pros|
 |lista wad|div.review-feature__title--negatives ~ div.review-feature__item <br>div.review-feature__col:has( > div.review-feature__title--negatives) > div.review-feature__item<br>div.review-feature__item:has( ~ div.review-feature__title--negatives)|cons|
 
-
-
 ## Etapy pracy nad projektem
 1)pobranie składowych pojedyńczej opini do niezależnych zmiennych
 2)zapisanie składowych pojedyńczej opinii do obiektu słownika (dictionary)
