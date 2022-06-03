@@ -1,7 +1,8 @@
+import numpy as np
 import os
-from turtle import title
 import pandas as pd
 from matplotlib import pyplot as plt 
+
 print(*[filename.split(".")[0]for filename in os.listdir("./reviews")],sep="\n")
 product_id = input("Podaj identyfikator produktu ")
 
@@ -21,4 +22,11 @@ recommendations.plot.pie(
     colors = ["crimson", "forestgreen", "lightskyblue"]
 
 )
+plt.show()
+
+bins= np.arange(0.5,5,0.5)
+plt.hist(opinions["stars"],bins=bins+ 0.8,width=0.4)
+plt.title('Ocena')
+plt.xlabel('Ilość gwiazdek')
+plt.ylabel('Ilość')
 plt.show()
